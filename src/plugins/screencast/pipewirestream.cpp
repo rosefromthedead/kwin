@@ -255,7 +255,7 @@ bool PipeWireStream::createStream()
     uint8_t buffer[2048];
     spa_pod_builder podBuilder = SPA_POD_BUILDER_INIT(buffer, sizeof(buffer));
     spa_fraction minFramerate = SPA_FRACTION(1, 1);
-    spa_fraction maxFramerate = SPA_FRACTION(25, 1);
+    spa_fraction maxFramerate = SPA_FRACTION(144, 1);
     spa_fraction defaultFramerate = SPA_FRACTION(0, 1);
 
     spa_rectangle resolution = SPA_RECTANGLE(uint32_t(m_resolution.width()), uint32_t(m_resolution.height()));
